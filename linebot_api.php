@@ -18,6 +18,10 @@ foreach ($request_json['events'] as $event)
 			
 			$txts = explode(" ", $text);
 			
+			if($text == "@bot สวัสดี"){
+				$reply_message = "สวัสดีพีรพล";	
+			}
+			
 			if($text == "@bot ไล่มงคลออก !!"){
 					$reply_message = "ไม่สามารถดำเนินการได้ในขณะนี้";
 				}
